@@ -6,7 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    key = "aws/ec2-deploy/terraform.tfstate"
+    bucket = var.tf_state_bucket_name  // Ensure this variable is defined
+    key    = "aws/ec2-deploy/terraform.tfstate"
+    region = "ap-south-1"
   }
 }
 
