@@ -5,7 +5,7 @@ const port = 3000;
 
 // Sample endpoint
 app.get('/api', (req, res) => {
-    res.json({ message: 'Hello from Express!' });
+    res.json({ message: 'Hello from Express api!' });
 });
 
 app.get('/', (req, res) => {
